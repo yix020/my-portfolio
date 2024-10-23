@@ -1,13 +1,18 @@
 import adapter from '@sveltejs/adapter-static';
 
-/** @type {import('@sveltejs/kit').Config} */
-const config = {
-	kit: {
-		adapter: adapter({ fallback: '404.html' }),
-		paths: {
-			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH,
-		},
-	},
-};
+const dev = process.env.NODE_ENV === 'development';
 
-export default config;
+export default {
+    kit: {
+        adapter: adapter({
+            pages: 'build',
+            assets: 'build',
+            fallback: null, // You can use 'index.html' for single-page app behavior
+            precompress: false,
+            strict: true
+        }),
+        paths: {
+            base: dev ? '' : '/REPO_NAME' // replace REPO_NAME with your actual repo name
+        }
+    }
+};
