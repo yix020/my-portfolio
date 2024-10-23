@@ -7,7 +7,7 @@ export default {
         adapter: adapter({
             pages: 'build',
             assets: 'build',
-            fallback: null, // You can use 'index.html' for single-page app behavior
+            fallback: index.html, // You can use 'index.html' for single-page app behavior
             precompress: false,
             strict: true
         }),
