@@ -6,7 +6,7 @@
 	  "dev": "vite dev",
 	  "build": "vite build",
 	  "preview": "vite preview",
-	  "prebuild": "npx elocuent -d static,src -o static/loc.csv"  // Added prebuild script
+	  "prebuild": "npx elocuent -d static,src -o static/loc.csv"
 	},
 	"devDependencies": {
 	  "@sveltejs/adapter-auto": "^3.0.0",
