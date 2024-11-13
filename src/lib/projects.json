@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Predicting Wage Difference between Male and Female (Class Project)",
+        "year" : "2021",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Analyzed U.S. employee demographic and occupational data using Python and Pandas to explore income disparities between genders. Developed a predictive statistical model and evaluated it with t-tests, 2-proportion Z tests, and linear regression to identify significant income predictors."
+    },
+    {
+        "title": "Analyzing Amazon Customer Behaviors Survey (Class Project)",
+        "year" : "2022",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Analyzed Amazon customer behavior data from Kaggle, including demographics and purchase frequency. Performed comprehensive data cleaning, preprocessing, and standardization for analysis. Used bar charts, count plots, and crosstab tables to uncover key insights into consumer patterns, guiding strategic recommendations to enhance the Amazon shopping experience."
+    },
+    {
+        "title": "Analyzing Uber Drivers in the New York City (Individual Project) ",
+        "year": "2023",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Acquired, cleaned, and analyzed location and dispatch data using histograms, point plots, and heatmaps."
+    },
+    {
+        "title": "Analyzing Hotel Booking Data (Individual Project)",
+        "year": "2023",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Processed and analyzed hotel booking data, using histograms and line plots to uncover trends and confirm normal distribution."
+    }
+]

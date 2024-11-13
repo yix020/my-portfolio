@@ -1,0 +1,87 @@
+/* General layout for the page */
+
+body {
+    max-width: 100ch;
+    margin-inline: auto;
+    padding: 0.5em;
+    font: 100%/1.5 system-ui;
+    background-color: var(--background-color, Canvas);
+    color: var(--text-color, CanvasText);
+}
+
+a {
+    flex: 1;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid var(--border-color-light);
+}
+
+@media (prefers-color-scheme: dark) {
+    nav {
+        border-bottom-color: var(--border-color-dark);
+    }
+}
+
+:root {
+    --color-accent: oklch(65% 50% 0);
+}
+
+html {
+    color-scheme: light dark;
+}
+
+nav a:hover {
+    border-bottom: 0.3em solid var(--color-accent);
+    padding-bottom: 0.1em;
+    color: var(--color-accent);
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.color-scheme {
+    margin-left: auto;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.color-scheme select {
+    margin-left: 0.5rem;
+    padding: 0.2em 0.5em;
+    font-family: inherit;
+    font-size: inherit;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .color-scheme {
+        align-self: flex-end;
+        margin-top: 0.5rem;
+    }
+}
+
+/* Latest Projects section layout - preserved as requested */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    gap: 1em;
+    padding: 1em;
+}

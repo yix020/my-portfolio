@@ -5,7 +5,17 @@
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>My Portfolio</title>
-		<link rel="stylesheet" href="%sveltekit.assets%/style.css" />
+
+		<!-- Prevent FOUC by setting color scheme immediately -->
+		<script>
+			// Access the <html> root element
+			let root = document.documentElement;
+			// Get the saved color scheme from localStorage, or default to 'light dark'
+			let colorScheme = localStorage.colorScheme ?? 'light dark';
+			// Apply the color scheme to the root element
+			root.style.setProperty('color-scheme', colorScheme);
+		</script>
+
 		<script src="%sveltekit.assets%/global.js" type="module"></script>
 		%sveltekit.head%
 	</head>

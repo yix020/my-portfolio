@@ -3,16 +3,23 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "vite preview"
+	  "dev": "vite dev",
+	  "build": "vite build",
+	  "preview": "vite preview",
+	  "prebuild": "npx elocuent -d static,src -o static/loc.csv"  // Added prebuild script
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^3.0.0",
-		"@sveltejs/adapter-static": "^3.0.5",
-		"@sveltejs/kit": "^2.0.0",
-		"@sveltejs/vite-plugin-svelte": "^4.0.0",
-		"svelte": "^5.0.0-next.272",
-		"vite": "^5.0.3"
+	  "@sveltejs/adapter-auto": "^3.0.0",
+	  "@sveltejs/adapter-static": "^3.0.5",
+	  "@sveltejs/kit": "^2.0.0",
+	  "@sveltejs/vite-plugin-svelte": "^4.0.0",
+	  "elocuent": "^0.0.3",
+	  "svelte": "^5.0.0-next.272",
+	  "vite": "^5.0.3"
+	},
+	"dependencies": {
+	  "d3": "^7.9.0",
+	  "node-localstorage": "^3.0.5"
 	}
-}
+  }
+  
